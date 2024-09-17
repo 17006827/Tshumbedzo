@@ -3,105 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Techno Airconditioning & Refrigeration</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+    <title>TECHNO - Airconditioning & Refrigeration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #000;
+        }
+        header p {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .services, .testimonials, .contact, .about, .faq, .booking-form {
+            margin-top: 30px;
+        }
+        .services h2, .testimonials h2, .faq h2, .contact h2, .about h2, .booking-form h2 {
+            color: #ffcc00;
+        }
+        .services p, .about p {
+            line-height: 1.6;
+        }
+        .testimonial {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .booking-form button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item h4 {
+            margin: 0;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            color: #333;
+        }
+        .faq-item p {
+            display: none;
+            padding: 10px;
+            background-color: #e9e9e9;
+        }
+    </style>
+    <script>
+        function toggleFAQ(item) {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>TECHNO</h1>
-                <p>Airconditioning & Refrigeration</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-            <a href="#quote" class="cta-button">Get a Free Quote</a>
-        </div>
+        <h1>TECHNO</h1>
+        <p>Airconditioning & Refrigeration - We work to satisfy</p>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Professional Airconditioning & Refrigeration Services</h2>
-            <p>Reliable services to keep your environment cool and fresh</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking-form">Book Service</a>
+    </nav>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
+    <div class="container">
+        <!-- Services Section -->
+        <section id="services" class="services">
             <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="icons/installation.png" alt="Installations">
-                    <h3>Installations</h3>
-                    <p>Expert installations of all air conditioning units.</p>
-                </div>
-                <div class="service-item">
-                    <img src="icons/repair.png" alt="Repairs">
-                    <h3>Repairs</h3>
-                    <p>Fast and reliable repair services for all units.</p>
-                </div>
-                <div class="service-item">
-                    <img src="icons/cold-room.png" alt="Cold Rooms">
-                    <h3>Cold Rooms</h3>
-                    <p>Professional installation and maintenance of cold rooms.</p>
-                </div>
-                <div class="service-item">
-                    <img src="icons/car-ac.png" alt="Car Aircon">
-                    <h3>Car Aircon</h3>
-                    <p>Car air conditioning installation and repair.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>We offer a range of services to meet your needs:</p>
+            <ul>
+                <li>Installations</li>
+                <li>Services & Repairs</li>
+                <li>Cold Rooms</li>
+                <li>Freezer Rooms</li>
+                <li>Ice Machines</li>
+                <li>Car Aircon</li>
+            </ul>
+        </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-us">
-        <div class="container">
+        <!-- About Us Section -->
+        <section id="about" class="about">
             <h2>About Us</h2>
-            <p>We are a leading provider of air conditioning and refrigeration services, with a commitment to delivering top-quality solutions for both residential and commercial customers. Our team is led by Oscar, with years of experience in providing satisfaction-guaranteed services.</p>
-        </div>
-    </section>
+            <p>At TECHNO, we have been providing expert air conditioning and refrigeration services since 2016...</p>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"Amazing service! My aircon was fixed in no time. Highly recommend TECHNO!" - John D.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Their installation was quick and professional. Great job!" - Sarah K.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4 onclick="toggleFAQ(this)">What areas do you service?</h4>
+                <p>We cover the Trichardt area and surrounding towns.</p>
+            </div>
+            <div class="faq-item">
+                <h4 onclick="toggleFAQ(this)">Do you offer a warranty?</h4>
+                <p>Yes, all our services come with a 6-month warranty.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <div class="contact-info">
-                <p><strong>Phone:</strong> 079 223 8152</p>
-                <p><strong>Email:</strong> <a href="mailto:tsumbedzo.techno@gmail.com">tsumbedzo.techno@gmail.com</a></p>
-                <p><strong>Address:</strong> Villa Tritonia, nr 12 Van Der Merwe str, Trichardt 2300</p>
+                <p>Call: 079 386 4287</p>
+                <p>Email: tsumbedzo.techno@gmail.com</p>
+                <p>Address: Villa Tritonia, nr 12 Van Der Merwe str, Trichardt 2300</p>
             </div>
-            <form action="#" method="POST">
+        </section>
+
+        <!-- Booking Form Section -->
+        <section id="booking-form" class="booking-form">
+            <h2>Book a Service</h2>
+            <form>
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" name="phone" placeholder="Your Phone" required>
+                <select name="service">
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="installation">Installation</option>
+                    <option value="repair">Repair</option>
+                    <option value="cold-rooms">Cold Room Service</option>
+                    <option value="aircon-service">Car Aircon Service</option>
+                </select>
+                <button type="submit">Submit Booking</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Techno Airconditioning & Refrigeration. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
-            </div>
-        </div>
+        <p>&copy; 2024 TECHNO - All Rights Reserved. | Reg No: 2016/207750/07</p>
     </footer>
 
 </body>
